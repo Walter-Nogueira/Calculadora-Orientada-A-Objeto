@@ -12,7 +12,7 @@ namespace CalculadoraOrientadaAObjeto
             messageOpen.MessageStart();
             int choice = Convert.ToInt32(Console.ReadLine());
 
-            if (choice < 0 || choice > 5)
+            if (choice < 0 || choice > 6)
             {
                 Console.WriteLine("\nERRO");
                 Environment.Exit(0);
@@ -50,10 +50,18 @@ namespace CalculadoraOrientadaAObjeto
                         break;
                     case 5:
                         SquareRoot squareRoot = new SquareRoot();
-                        squareRoot.userEntreSqRt();
+                        squareRoot.UserEntreSqRt();
                         messageAgain.MessageRepeat();
                         choice = Convert.ToInt32((Console.ReadLine()));
                         break;
+                    case 6:
+                        CubeRoot cubeRoot = new CubeRoot();
+                        cubeRoot.UserCubeRoot();
+                        break;
+                    default:
+                        Environment.Exit(0);
+                        break;
+
                 }
             }
 

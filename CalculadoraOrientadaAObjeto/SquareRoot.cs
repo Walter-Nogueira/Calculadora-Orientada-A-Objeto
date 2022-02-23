@@ -8,7 +8,7 @@ namespace CalculadoraOrientadaAObjeto
 {
     internal class SquareRoot
     {
-        public void userEntreSqRt()
+        public void UserEntreSqRt()
         {
             Console.Write("\nEntre com o numero qual deseja obter a raiz quadrada: ");
             double squareRoot = Convert.ToDouble(Console.ReadLine());
