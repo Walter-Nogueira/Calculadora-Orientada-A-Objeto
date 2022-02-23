@@ -14,11 +14,11 @@ namespace CalculadoraOrientadaAObjeto
 
             if (choice < 0 || choice > 6)
             {
-                Console.WriteLine("\nERRO");
+                Console.WriteLine("\nERROR");
                 Environment.Exit(0);
             }
 
-            while (choice != 0)
+            while (choice != 0) // enquanto for diferente de 0, o programa continua sendo executado
             {
                 Message messageAgain = new Message();
 
@@ -48,20 +48,18 @@ namespace CalculadoraOrientadaAObjeto
                         messageAgain.MessageRepeat();
                         choice = Convert.ToInt32(Console.ReadLine());
                         break;
-                    case 5:
+                    case 5: // Raiz quadrada
                         SquareRoot squareRoot = new SquareRoot();
                         squareRoot.UserEntreSqRt();
                         messageAgain.MessageRepeat();
                         choice = Convert.ToInt32((Console.ReadLine()));
                         break;
-                    case 6:
+                    case 6: // Raiz cubica
                         CubeRoot cubeRoot = new CubeRoot();
                         cubeRoot.UserCubeRoot();
+                        messageAgain.MessageRepeat();
+                        choice = Convert.ToInt32((Console.ReadLine()));
                         break;
-                    default:
-                        Environment.Exit(0);
-                        break;
-
                 }
             }
 
