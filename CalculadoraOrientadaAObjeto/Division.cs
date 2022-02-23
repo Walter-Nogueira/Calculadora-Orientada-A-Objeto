@@ -20,8 +20,7 @@ namespace CalculadoraOrientadaAObjeto
                 Console.WriteLine("Nao é possível fazer divisao por zero");
             }else
             {
-                Console.WriteLine("{0} / {1} = {2}",
-                numEntre1, numEntre2, Math.Round((numEntre1 / numEntre2), 2));
+                Console.WriteLine("{0} / {1} = {2}", numEntre1, numEntre2, Math.Round((numEntre1 / numEntre2), 2));
             }
             
         }

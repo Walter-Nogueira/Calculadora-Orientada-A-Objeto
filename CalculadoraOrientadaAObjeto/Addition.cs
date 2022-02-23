@@ -16,8 +16,7 @@ namespace CalculadoraOrientadaAObjeto
             double numEntre1 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Second number: ");
             double numEntre2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("{0} + {1} = {2}",
-                numEntre1, numEntre2, Math.Round((numEntre1 + numEntre2), 2));
+            Console.WriteLine("{0} + {1} = {2}", numEntre1, numEntre2, Math.Round((numEntre1 + numEntre2), 2));
         }
     }
 }
